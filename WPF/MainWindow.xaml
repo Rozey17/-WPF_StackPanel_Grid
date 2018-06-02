@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="750" Width="400">
+    <Border Padding="10">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="Apply" Margin="0 0 10 0"/>
+                <Button Grid.Column="1" Content="Reset"/>
+                <Button Grid.Column="2" Content="Refresh" Margin="10 0 0 0"/>
+            </Grid>
+           
+            <TextBlock Text="Propreties" FontWeight="Bold" Margin="0 10 0 0"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <CheckBox Grid.Row="0" Grid.Column="0" Content="Choice 1" FontWeight="Bold" Margin="0 10 0 0" />
+                <CheckBox Grid.Row="1" Grid.Column="0" Content="Choice 2" FontWeight="Bold" Margin="0 10 0 0" />
+                <CheckBox Grid.Row="2" Grid.Column="0" Content="Choice 3" FontWeight="Bold" Margin="0 10 0 0" />
+                <CheckBox Grid.Column="1"  Content="CheckBox" FontWeight="Bold" Margin="0 10 0 0" />
+            </Grid>
+        </StackPanel>
+    </Border> 
+    
 </Window>
